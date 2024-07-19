@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="auth">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <h2>Signup</h2>
+            <form id="signupForm">
+                <input type="text" id="signupUsername" placeholder="Username" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+        <div id="notes" style="display: none;">
+            <div id="menu">
+                <button id="createNote">Create Note</button>
+                <input type="text" id="search" placeholder="Search notes">
+            </div>
+            <div id="noteList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
